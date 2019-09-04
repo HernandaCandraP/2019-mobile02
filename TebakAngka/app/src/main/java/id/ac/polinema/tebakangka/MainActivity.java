@@ -26,13 +26,12 @@ public class MainActivity extends AppCompatActivity {
 		initRandomNumber();
 		input = findViewById(R.id.number_input);
 		tebak = findViewById(R.id.guess_button);
-		Toast.makeText(this, ""+random, Toast.LENGTH_SHORT).show();
 	}
 
 	// TODO: generate angka random di sini
 	private int initRandomNumber() {
 		Random r = new Random();
-		random = r.nextInt(100);
+		random = r.nextInt(100)+1;
 		return random;
 	}
 
